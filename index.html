@@ -10,22 +10,30 @@
 <body>
     <header class="header">
         <h1>Centro de Formación</h1>
-        <ul class="menu">
-            <li>Inicio</li>
-            <li>Cursos</li>
-            <li>Docentes</li>
-            <li>Aulas</li>
-            <li>Mis matrículas</li>
-            <li>Perfil</li>
-            <li>Accesibilidad</li>
-            <li>Cerrar Sesión</li>
-        </ul>
+        <div class="menu-container">
+             <ul class="menu" id="barra-principal">
+                <li>Inicio</li>
+                <li>Iniciar Sesión</li>
+            </ul>
+            <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
+                &#8942;
+            </button>
+            <ul class="menu" id="main-menu">
+                <li>Cursos</li>
+                <li>Docentes</li>
+                <li>Aulas</li>
+                <li>Mis matrículas</li>
+                <li>Perfil</li>
+                <li>Accesibilidad</li>
+                <li>Cerrar Sesión</li>
+            </ul>
+        </div>
     </header>
 
     <main class="container">
         <h1>Sobre nosotros</h1>
         <p>Esto es una prueba y no sé que pollas poner</p>
-        <img src="foto.png" alt="foto" class="img-fluid">
+        <img src="foto.png" alt="Imagen del centro de formación" class="img-fluid">
     </main>
 
     <footer class="footer">
@@ -33,5 +41,6 @@
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
