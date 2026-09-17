@@ -1,0 +1,48 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    background-color: #bdc4c7;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    color: #06325e;
+}
+
+.header {
+    background-color: #06325e;
+    color:antiquewhite;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0 0 0 auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid antiquewhite;
+    border-radius: 3px;
+}
+
+.menu li {
+    padding: 0.5rem;
+}
+
+.footer{
+    background-color: #346393;
+    color:antiquewhite;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+}
