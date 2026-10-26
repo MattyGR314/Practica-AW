@@ -1,6 +1,6 @@
 body {
     font-family: 'Manrope', sans-serif;
-    background-color: #06325e;
+    background-color: #4b7fb3;
     margin: 0;
     min-height: 100vh;
     display: grid;
@@ -10,14 +10,14 @@ body {
 form{
     display: grid;
     place-items: center;
-    border: 1px solid #06325e;
+    border: 1px solid #06325ec2;
     border-radius: 20px;
     margin: 2rem;
     padding: 2rem;
-    background-color: #adc8e4;
+    background-color: #5790cd6c;
     width: 800px;
     height: 400px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.574);
 }
 
 form h1{

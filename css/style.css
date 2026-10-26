@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #bdc4c7;
+    background-color: #a3cfe1;
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -9,20 +9,21 @@ body {
 
 main {
     flex: 1;
-    background-color: #bdc4c7;
+    background-color: #a3cfe1;
     font-family: 'Manrope', sans-serif;
     text-align: center;
-    color: #06325e;
+    color: #0d467e;
 }
 
 .header {
-    background-color: #06325e;
+    background-color: #3974af8a;
     color:antiquewhite;
     font-family: 'Manrope', sans-serif;
     display: flex;
     align-items: center;
-    border-radius: 0 0 10px 10px;
+    text-shadow: #0a2f52 4px 4px 8px;
     padding: 1rem;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .menu-container {
@@ -60,16 +61,17 @@ main {
 }
 
 #main-menu {
-    background-color: #06325e;
+    background-color: #5e92c78a;
     border: 1px solid antiquewhite;
     border-radius: 3px;
     display: none;
     min-width: 12rem;
-    padding: 0.5rem 0;
+    padding: 0 0;
     position: absolute;
     right: 0;
-    top: calc(100% + 0.5rem);
+    top: calc(100% + 1rem);
     z-index: 10;
+    text-shadow: #0c2a47 4px 4px 8px;
 }
 
 #main-menu.is-open {
@@ -83,18 +85,19 @@ main {
 
 #main-menu li:hover,
 #barra-principal li:hover {
-    background-color: #346393;
+    background-color: #5e92c78a;
 }
 
 .footer{
-    background-color: #346393;
+    background-color: #5e92c78a;
     color:antiquewhite;
     font-family: 'Manrope', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0px 0px;
     padding: 1rem;
+    text-shadow: #0c2a47 4px 4px 8px;
 }
 
 li a {

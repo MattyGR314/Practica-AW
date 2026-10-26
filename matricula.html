@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <form action="procesar.php" method="post">
+        <button class="volver" onclick="window.location.href='index.html'"><img src="img/arrow-left-circle.png" alt="Volver"></button>
+         <h1>Matricularse en un Curso</h1>
+        
+        <select name="curso" required>
+            <option value="">Seleccione un curso</option>
+            <option value="curso1">Curso 1</option>
+            <option value="curso2">Curso 2</option>
+            <option value="curso3">Curso 3</option>
+         </select>
+
+            <button type="submit" onclick="window.location.href='index.html'">Matricularse</button>
+
+    </form>
+    <script src="js/header.js"></script>
+</body>
