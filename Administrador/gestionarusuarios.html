@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Gestionar Usuarios</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <h1>Lista de Usuarios</h1>
+
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="gestionarusuarios.html">Usuarios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="listadocente.html">Docentes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="listaaulas.html">Aulas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <ul class="lista de usuarios" id="lista-aulas">
+        <li><div class="listausuarios"> 
+            <h3>Id: 1</h3>
+            <p>Nombre: Mateo Gutierrez Rios</p>
+            <p>Contraseña: 123456</p>
+            <p>Correo: mateo@fdi.ucm.es</p>
+            <p>Rol: Estudiante</p></div>
+            <p>Estado: Defenestrada</p>
+            <p>Fecha de Alta: 2023-01-15</p>
+            <p>Preferencias de Accesibilidad: -</p>
+            <div class="botones">
+                <button onclick="window.location.href='../General/editarperfil.html'">Editar</button>
+                <button onclick="window.location.href='dardebaja.html'">Eliminar</button>
+            </div></li>
+        <li><div class="listausuarios"> 
+            <h3>Id: 2</h3>
+            <p>Nombre: Virginia Francisco Martin</p>
+            <p>Contraseña: 12345</p>
+            <p>Correo: virginia@fdi.ucm.es</p>
+            <p>Rol: Docente</p></div>
+            <p>Estado: Defenestrada</p>
+            <p>Fecha de Alta: 2023-01-15</p>
+            <p>Preferencias de Accesibilidad: -</p>
+            <div class="botones">
+                <button onclick="window.location.href='../General/editarperfil.html'">Editar</button>
+                <button onclick="window.location.href='dardebaja.html'">Eliminar</button>
+            </div></li>
+        </div></li>
+    </ul>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer"></div>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

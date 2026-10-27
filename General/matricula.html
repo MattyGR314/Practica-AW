@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Matricularse</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+    <form action="procesar.php" method="post">
+        <button class="volver" onclick="window.location.href='index.html'"><img src="../img/arrow-left-circle.png" alt="Volver"></button>
+         <h1>Matricularse</h1>
+        <!-- el procesar.php es donde se mandan los datos del formulario, queremos que vayan a la BBDD-->
+         <div class="form-gupo">
+            <p>Usuario: </p>
+            <input type="text" name="username" placeholder="Nombre de usuario" required>
+         </div>
+        
+         <div class="form-gupo">
+            <p>Curso: </p>
+            <input type="text" name="course" placeholder="Nombre del curso" required>
+         </div>
+        <br>
+        <button type="submit" onclick="window.location.href='index.html'">Matricularse</button>
+    </form>
+
+    <div id="footer"></div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
