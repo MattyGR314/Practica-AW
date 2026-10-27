@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Gestionar Docentes</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="containertressecciones">
+        <h1>Lista de Docentes</h1>
+        <nav class="barrabusqueda" aria-label="Barra de búsqueda">
+            <input type="text" placeholder="Buscar docente..." class="busqueda-docentes">
+            <button type="button" class="boton-buscar">Buscar</button>
+        </nav>
+        <button type="button" class="boton-crear-usuario" onclick="window.location.href='../General/registro.html'">Crear Usuario</button>
+    </div>
+
+    <ul class="listaadmin" id="lista-aulas">
+        <li>
+            <ul>
+                <h1>Docente 1</h1>
+
+                <img src="../img/ignacio.fabregas.png" alt="Imagen del Docente 1">
+
+                <p>Descripción del docente 1...</p>
+                <li>Id: 1</li>
+                <li>Nombre: Antonio</li>
+                <li>Apellidos: Navarro Martín</li>
+                <li>Especialidad: Sufrimiento y desesperación</li>
+                <li>Correo electrónico responsable: antonio@fdi.ucm.es</li>
+                <li>Telefono: 123-456-7890</li>
+                <li>Estado: Activo</li>
+        </ul>
+        </li>
+        <li>
+            <ul>
+                <h1>Docente 2</h1>
+
+                <img src="../img/virginia.francisco.png" alt="Imagen del Docente 2">
+
+                <p>Descripción del docente 2...</p>
+                <li>Id: 2</li>
+                <li>Nombre: Virginia</li>
+                <li>Apellidos: Francisco Martin</li>
+                <li>Especialidad: Sufrimiento y desesperación</li>
+                <li>Correo electrónico responsable: virginia@fdi.ucm.es</li>
+                <li>Telefono: 098-765-4321</li>
+                <li>Estado: Activo</li>
+            </ul>
+        </li>
+    </ul>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer"></div>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

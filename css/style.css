@@ -16,6 +16,107 @@ li button{
     cursor: pointer;
 }
 
+nav > ul{
+    color: antiquewhite;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    padding: 0.5rem 0.5rem;
+    text-shadow: #0a2f52 4px 4px 8px;
+    list-style: none;
+    margin: 0 15px 0 0;
+}
+
+.container {
+    display: block;
+    gap: 2rem;
+    align-items: start;
+    max-width: 1000px;
+    margin: 2rem auto;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color : #1E3A8A;
+}
+
+.containertressecciones {
+    display: grid;
+    grid-template-columns: minmax(max-content, 1fr) minmax(0, 2fr) minmax(max-content, 1fr);
+    gap: 1rem;
+    align-items: center;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 2rem 1rem;
+    background-color: #FFFFFF;
+    padding: 1.5rem 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color : #1E3A8A;
+}
+
+.containertressecciones h1 {
+    justify-self: start;
+    white-space: nowrap;
+}
+
+.barrabusqueda {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-self: center;
+    width: 100%;
+    max-width: 32rem;
+    min-width: 0;
+}
+
+.boton-crear-usuario {
+    justify-self: end;
+}
+
+@media (max-width: 700px) {
+    #containertressecciones {
+        grid-template-columns: 1fr;
+    }
+
+    .containertressecciones h1,
+    .barrabusqueda,
+    .boton-crear-usuario {
+        justify-self: stretch;
+    }
+
+    .containertressecciones h1 {
+        white-space: normal;
+    }
+
+    .barrabusqueda {
+        flex-wrap: wrap;
+    }
+}
+
+.botones > ul >li {
+    min-width: 0;
+}
+
+.botones #lista-botones {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.botones #lista-botones > li {
+    display: flex;
+    min-width: 0;
+}
+
+.botones #lista-botones > li > button {
+    width: 100%;
+    min-height: 4rem;
+    flex: 1;
+}
+
 main {
     flex: 1;
     background-color: #a3cfe1;

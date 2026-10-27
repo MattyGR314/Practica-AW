@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Gestionar Aulas</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="containertressecciones">
+        <h1>Lista de Aulas</h1>
+        <nav class="barrabusqueda" aria-label="Barra de búsqueda">
+            <input type="text" placeholder="Buscar aula..." class="busqueda">
+            <button type="button" class="boton-buscar">Buscar</button>
+        </nav>
+        <button type="button" class="boton-crear-aula" onclick="window.location.href='../General/registroaula.html'">Crear Aula</button>
+    </div>
+
+    <ul class="listaadmin">
+        <li><div class="listaaula"> 
+            <ul>
+                <h3>Id: 1</h3>
+                <li>Nombre: Aula 101</li>
+                <li>Ubicación: Edificio A, Primer piso</li>
+                <li>Capacidad: 30 estudiantes</li>
+                <li>Equipamiento: Proyector, Computadoras</li>
+                <li>Estado: Disponible</li>
+            </ul>
+        </div></li>
+        <li><div class="listaaula"> 
+            <ul>
+                <h3>Id: 2</h3>
+                <li>Nombre: Aula 102</li>
+                <li>Ubicación: Edificio B, Segundo piso</li>
+                <li>Capacidad: 25 estudiantes</li>
+                <li>Equipamiento: Proyector, Computadoras</li>
+                <li>Estado: Ocupada</li>
+            </ul>
+        </div></li>
+    </ul>
+            <div class="botones">
+                <button onclick="window.location.href='../General/editarcurso.html'">Editar</button>
+                <button onclick="window.location.href='dardebaja.html'">Eliminar</button>
+            </div></li>
+        </div>
+    </ul>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer"></div>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

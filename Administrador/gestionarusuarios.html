@@ -10,50 +10,48 @@
 <body>
     <div id="header"></div>
 
-    <h1>Lista de Usuarios</h1>
+    <div class="containertressecciones">
+        <h1>Lista de Usuarios</h1>
+        <nav class="barrabusqueda" aria-label="Barra de búsqueda">
+            <input type="text" placeholder="Buscar usuario..." class="busqueda">
+            <button type="button" class="boton-buscar">Buscar</button>
+        </nav>
+        <button type="button" class="boton-crear-curso" onclick="window.location.href='../General/registrocurso.html'">Crear Curso</button>
+    </div>
 
-    <nav>
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link" href="gestionarusuarios.html">Usuarios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="listadocente.html">Docentes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="listaaulas.html">Aulas</a>
-            </li>
-        </ul>
-    </nav>
-
-    <ul class="lista de usuarios" id="lista-aulas">
+    <ul class="listaadmin">
         <li><div class="listausuarios"> 
-            <h3>Id: 1</h3>
-            <p>Nombre: Mateo Gutierrez Rios</p>
-            <p>Contraseña: 123456</p>
-            <p>Correo: mateo@fdi.ucm.es</p>
-            <p>Rol: Estudiante</p></div>
-            <p>Estado: Defenestrada</p>
-            <p>Fecha de Alta: 2023-01-15</p>
-            <p>Preferencias de Accesibilidad: -</p>
+            <ul>
+                <h3>Id: 1</h3>
+                <li>Nombre: Mateo Gutierrez Rios</li>
+                <li>Contraseña: 123456</li>
+                <li>Correo: mateo@fdi.ucm.es</li>
+                <li>Rol: Estudiante</li>
+                <li>Estado: Defenestrada</li>
+                <li>Fecha de Alta: 2023-01-15</li>
+                <li>Preferencias de Accesibilidad: -</li>
+            </ul>
             <div class="botones">
-                <button onclick="window.location.href='../General/editarperfil.html'">Editar</button>
+                <button onclick="window.location.href='../General/editarcurso.html'">Editar</button>
                 <button onclick="window.location.href='dardebaja.html'">Eliminar</button>
             </div></li>
+        </div>
         <li><div class="listausuarios"> 
-            <h3>Id: 2</h3>
-            <p>Nombre: Virginia Francisco Martin</p>
-            <p>Contraseña: 12345</p>
-            <p>Correo: virginia@fdi.ucm.es</p>
-            <p>Rol: Docente</p></div>
-            <p>Estado: Defenestrada</p>
-            <p>Fecha de Alta: 2023-01-15</p>
-            <p>Preferencias de Accesibilidad: -</p>
+            <ul>
+                <h3>Id: 2</h3>
+                <li>Nombre: Virginia Francisco Martin</li>
+                <li>Contraseña: 12345</li>
+                <li>Correo: virginia@fdi.ucm.es</li>
+                <li>Rol: Docente</li>
+                <li>Estado: Defenestrada</li>
+                <li>Fecha de Alta: 2023-01-15</li>
+                <li>Preferencias de Accesibilidad: -</li>
+            </ul>
             <div class="botones">
-                <button onclick="window.location.href='../General/editarperfil.html'">Editar</button>
+                <button onclick="window.location.href='../General/editarcurso.html'">Editar</button>
                 <button onclick="window.location.href='dardebaja.html'">Eliminar</button>
             </div></li>
-        </div></li>
+        </div>
     </ul>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

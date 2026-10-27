@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Gestionar Cursos</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="containertressecciones">
+        <h1>Lista de Cursos</h1>
+        <nav class="barrabusqueda" aria-label="Barra de búsqueda">
+            <input type="text" placeholder="Buscar curso..." class="busqueda-cursos">
+            <button type="button" class="boton-buscar">Buscar</button>
+        </nav>
+        <button type="button" class="boton-crear-usuario" onclick="window.location.href='../General/registro.html'">Crear Usuario</button>
+    </div>
+
+    <ul class="listaadmin" id="lista-aulas">
+        <li>
+            <ul>
+                <h1>Curso 1</h1>
+
+                <img src="../img/lab.jpg" alt="Imagen del Curso 1">
+
+                <p>Descripción del curso 1...</p>
+                <li>Id: 1</li>
+                <li>Nombre: MS</li>
+                <li>Descripción: Sufrimiento y desesperación</li>
+                <li>Docente responsable: Antonio Navarro Martín</li>
+                <li>Aula asignada: Aula 4</li>
+                <li>Fecha de inicio: <time datetime="2026-09-09">9 de septiembre de 2026</time></li>
+                <li>Fecha de finalización: <time datetime="2026-12-09">9 de diciembre de 2026</time></li>
+                <li>Horario: Lunes y miércoles de 10:00 a 12:00</li>
+                <li>Número máximo de plazas: 120</li>
+                <li>Estado: Activo</li>
+        </ul>
+        </li>
+    </ul>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer"></div>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>
