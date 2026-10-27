@@ -3,20 +3,20 @@
     <h1>Centro de Formación</h1>
     <div class="menu-container">
         <ul class="menu" id="barra-principal">
-            <li>Inicio</li>
-            <li><a href="inicio-sesion.html">Iniciar Sesión</a></li>
+            <li><a href="/General/index.html">Inicio</a></li>
+            <li><a href="/General/inicio-sesion.html">Iniciar Sesión</a></li>
         </ul>
         <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
             &#8942;
         </button>
         <ul class="menu" id="main-menu">
-            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="/General/cursos.html">Cursos</a></li>
             <li>Docentes</li>
             <li>Aulas</li>
-            <li>Mis matrículas</li>
-            <li>Perfil</li>
+            <li><a href="/Usuario/mismatriculas.html">Mis matrículas</a></li>
+            <li><a href="/Usuario/perfil.html">Perfil</a></li>
             <li>Accesibilidad</li>
-            <li>Cerrar Sesión</li>
+            <li><button type="button" onclick="window.location.href='/General/index.html'">Cerrar Sesión</button></li>
         </ul>
     </div>
 </header>

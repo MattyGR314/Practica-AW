@@ -3,7 +3,7 @@ const headerContainer = document.querySelector('#header');
 if (!headerContainer) {
     console.error('No se encontró el contenedor #header.');
 } else {
-    fetch('header.html')
+    fetch('../header.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`No se pudo cargar header.html: ${response.status}`);
@@ -14,7 +14,7 @@ if (!headerContainer) {
             headerContainer.innerHTML = html;
 
             const menuScript = document.createElement('script');
-            menuScript.src = 'js/menu.js';
+            menuScript.src = '../js/menu.js';
             menuScript.onerror = () => {
                 console.error('No se pudo cargar js/menu.js.');
             };
