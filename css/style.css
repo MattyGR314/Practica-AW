@@ -23,7 +23,7 @@ nav > ul{
     display: block;
     gap: 2rem;
     align-items: start;
-    max-width: 1000px;
+    width: 1000px;
     margin: 2rem auto;
     background-color: #dce1de;
     padding: 1.5rem;

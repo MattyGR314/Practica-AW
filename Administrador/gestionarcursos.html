@@ -32,11 +32,11 @@
 
     <ul class="listaadmin" id="lista-aulas">
         <li>
-            <ul>
+            <div class="lista"><ul>
                 <h1>Curso 1</h1>
 
-                <img src="../img/lab.jpg" alt="Imagen del Curso 1">
-
+                <div class="imagen"><img src="../img/lab.jpg" alt="Imagen del Curso 1"></div>
+                <div class="info">
                 <p>Descripción del curso 1...</p>
                 <li>Id: 1</li>
                 <li>Nombre: MS</li>
@@ -48,12 +48,14 @@
                 <li>Horario: Lunes y miércoles de 10:00 a 12:00</li>
                 <li>Número máximo de plazas: 120</li>
                 <li>Estado: Activo</li>
-        </ul>
+                </div>
+                <div class="botonesadmin">
+                    <button onclick="window.location.href='../General/editarcurso.html'">Editar</button>
+                    <button onclick="window.location.href='dardebaja.html'">Eliminar</button>
+                </div>
+        </ul></div>
         <br>
-        <div class="botones">
-                <button onclick="window.location.href='../General/editarcurso.html'">Editar</button>
-                <button onclick="window.location.href='dardebaja.html'">Eliminar</button>
-        </div></li>
+        
         </li>
     </ul>
 
