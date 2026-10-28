@@ -1,23 +1,25 @@
 body {
     font-family: 'Manrope', sans-serif;
+    /*background-image: url('../img/banner.png');*/
     background-color: #dce1de;
     margin: 0;
     min-height: 100vh;
-    display: grid;
-    place-items: center;
 }
 
 form{
     display: grid;
     place-items: center;
+    align-self: center;
     border: 1px solid #2c5f47;
     border-radius: 20px;
+    border-width: 5px;
     margin: 2rem;
     padding: 2rem;
     background-color: #9cc5a1;
     width: 80%;
     height: 50%;
     box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.574);
+    color: #dce1de;
 }
 
 li{
@@ -25,7 +27,7 @@ li{
 }
 
 form h1{
-    color: #2c5f47;
+    color: #dce1de;
     margin-bottom: 1rem;
 }
 
@@ -33,13 +35,13 @@ form input{
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: 2px ridge #a9970e;
+    border: 2px ridge #2c5f47c4;
     border-radius: 5px;
 }
 
 form button{
-    background-color: #FFD700;
-    color: #7c6b0a;
+    background-color: #a38922;
+    color: #dce1de;
     text-shadow: 0 2px 2px 2px #4cac265b;
     font-weight: bold;
     border: none;
@@ -55,15 +57,20 @@ form button:hover{
 }
 
 form p{
-    color: #2c5f47;
+    color: #dce1de;
     margin-top: 1rem;
+}
+
+form input::placeholder{
+    color: #dce1de;
+    opacity: 0.7;
 }
 
 .volver{
     position: fixed;
     top: 1rem;
     left: 1rem;
-    background-color: #dce1de;
+    background-color: #85d8a6;
     text-decoration: none;
     font-weight: bold;
 }
