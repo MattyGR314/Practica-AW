@@ -54,7 +54,7 @@ nav > ul{
     grid-template-columns: minmax(max-content, 1fr) minmax(0, 2fr) minmax(max-content, 1fr);
     gap: 1rem;
     align-items: center;
-    width: 90%;
+    width: 100% - 1rem;
     box-sizing: border-box;
     margin: 2rem 1rem;
     background-color: #dce1de;
@@ -75,8 +75,8 @@ nav > ul{
     gap: 0.5rem;
     justify-self: center;
     width: 100%;
-    max-width: 32rem;
-    min-width: 0;
+    max-width: 90%;
+    min-width: 10px;
 }
 
 .boton-crear-usuario {

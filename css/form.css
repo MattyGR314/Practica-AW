@@ -33,21 +33,25 @@ form input{
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: 1px solid #06325e;
+    border: 2px ridge #a9970e;
     border-radius: 5px;
 }
 
 form button{
-    background-color: #dce1de;
-    color: #2c5f47;
+    background-color: #FFD700;
+    color: #7c6b0a;
+    text-shadow: 0 2px 2px 2px #4cac265b;
+    font-weight: bold;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 2px 2px #7c6b0a;
 }
 
 form button:hover{
-    background-color: #99bba7;
+    background-color: #7c6b0a;
+    color: #d9d8d2;
 }
 
 form p{
