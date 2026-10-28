@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="es"> //TODO
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/listas.css">
     <title>Mi Perfil</title>
 </head>
 
@@ -20,7 +21,7 @@
 
     <h1>Mi Perfil</h1>
 
-    <ul>
+    <ul class="cursoinfo">
         <li>Id: 1</li>
         <li>Nombre: Mateo</li>
         <li>Apellidos: Gutierrez Rios</li>
@@ -29,9 +30,10 @@
         <li>Estado: Defenestrada</li>
         <li>Fecha de Alta: 2023-01-15</li>
         <li>Preferencias de Accesibilidad: -</li>
+        <button onclick="window.location.href='../General/editarperfil.html'">Editar</button>
     </ul>
 
-    <button onclick="window.location.href='matricula.html'">Matricularse</button>
+    
     
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <div id="footer"></div>

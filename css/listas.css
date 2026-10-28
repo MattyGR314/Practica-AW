@@ -22,7 +22,7 @@ li{
     align-items: center;
     gap: 1rem;
     padding: 0.5rem 1rem;
-    border-bottom: 1px solid #2c5f47c4;
+    /*border-bottom: 1px solid #2c5f47c4;*/
 }
 
 .cursoinfo{
@@ -134,4 +134,52 @@ li{
     align-items: initial;
     gap: normal;
     border-bottom: 0;
+}
+
+.lista{
+    display: block;
+    gap: 2rem;
+    align-items: start;
+    width: 1000px;
+    margin: 2rem auto;
+    background-color: #dce1de;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-color:#b59d3f;
+    border-width: 20px;
+    box-shadow: 0 4px 12px rgba(24, 61, 36, 0.833);
+    color : #2c5f47;
+}
+
+.info{
+    display:flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.imagen{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.listadocentes .lista {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.listadocentes .imagen img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    color: #2c5f47;
 }
