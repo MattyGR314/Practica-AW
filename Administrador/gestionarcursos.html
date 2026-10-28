@@ -13,13 +13,11 @@
 
     <nav class ="migas" aria-label="Migas de pan">
         <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../General/index.html">Inicio-></a></li>
+            <li class="breadcrumb-item"><a href="../General/index.html">Inicio</a></li>
             <li class="breadcrumb-item"><a href="administracion.html">Administración</a></li>
             <li class="breadcrumb-item">Gestionar Cursos</li>
         </ul>
     </nav>
-
-    <h1> Gestionar Cursos</h1>
 
     <div class="containertressecciones">
         <h1>Lista de Cursos</h1>
@@ -30,36 +28,31 @@
         <button type="button" class="boton-crear" onclick="window.location.href='../General/registro.html'">Crear Usuario</button>
     </div>
 
-    <ul class="listaadmin" id="lista-aulas">
+    <ul class="listaadmin">
         <li>
-            <div class="lista"><ul>
-                <h1>Curso 1</h1>
-
-                <div class="imagen"><img src="../img/lab.jpg" alt="Imagen del Curso 1"></div>
+            <div class="lista lista-con-imagen">
+                <div class="imagen">
+                    <img src="../img/lab.jpg" alt="Imagen del curso MS">
+                </div>
                 <div class="info">
-                <p>Descripción del curso 1...</p>
-                <li>Id: 1</li>
-                <li>Nombre: MS</li>
-                <li>Descripción: Sufrimiento y desesperación</li>
-                <li>Docente responsable: Antonio Navarro Martín</li>
-                <li>Aula asignada: Aula 4</li>
-                <li>Fecha de inicio: <time datetime="2026-09-09">9 de septiembre de 2026</time></li>
-                <li>Fecha de finalización: <time datetime="2026-12-09">9 de diciembre de 2026</time></li>
-                <li>Horario: Lunes y miércoles de 10:00 a 12:00</li>
-                <li>Número máximo de plazas: 120</li>
-                <li>Estado: Activo</li>
+                    <h3>Id: 1</h3>
+                    <p>Nombre: MS</p>
+                    <p>Descripción: Sufrimiento y desesperación</p>
+                    <p>Docente responsable: Antonio Navarro Martín</p>
+                    <p>Aula asignada: Aula 4</p>
+                    <p>Fecha de inicio: <time datetime="2026-09-09">9 de septiembre de 2026</time></p>
+                    <p>Fecha de finalización: <time datetime="2026-12-09">9 de diciembre de 2026</time></p>
+                    <p>Horario: Lunes y miércoles de 10:00 a 12:00</p>
+                    <p>Número máximo de plazas: 120</p>
+                    <p>Estado: Activo</p>
                 </div>
                 <div class="botonesadmin">
-                    <button onclick="window.location.href='../General/editarcurso.html'">Editar</button>
-                    <button onclick="window.location.href='dardebaja.html'">Eliminar</button>
+                    <button type="button" onclick="window.location.href='editar-curso.html'">Editar</button>
+                    <button type="button" onclick="window.location.href='dardebaja.html'">Eliminar</button>
                 </div>
-        </ul></div>
-        <br>
-        
+            </div>
         </li>
     </ul>
-
-    <
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <div id="footer"></div>

@@ -2,7 +2,7 @@ li button,
 .barrabusqueda > button,
 .containertressecciones > button {
     background-color: #2c5f47c4;
-    color: #dce1de;
+    color: #dce1ded3;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -31,7 +31,7 @@ li{
     align-items: start;
     max-width: 1000px;
     margin: 2rem auto;
-    background-color: #dce1de;
+    background-color: #dce1ded3;
     padding: 1.5rem;
     border-radius: 12px;
     border-color:#b59d3f;
@@ -49,7 +49,7 @@ li{
 
     button{
         background-color: #a38922;
-        color: #dce1de;
+        color: #dce1ded3;
         border: #87721f;
         padding: 0.5rem 1rem;
         border-radius: 5px;
@@ -66,27 +66,29 @@ li{
 .containertressecciones {
     display: grid;
     grid-template-columns: minmax(max-content, 1fr) minmax(0, 2fr) minmax(max-content, 1fr);
-    gap: 1rem;
+    gap: 0rem;
     align-items: center;
     width: 100% - 1rem;
+    height: 5rem;
     box-sizing: border-box;
     margin: 2rem 1rem;
-    background-color: #9cc5a1;
-    padding: 1.5rem 0;
+    background-color: #9cc5a1d4;
+    padding: 0. 0;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(24, 61, 36, 0.833);
-    color : #dce1de;
+    color : #dce1ded3;
     text-shadow: #2c5f47 4px 4px 8px;
 
 
     button{
         background-color: #a38922;
-        color: #dce1de;
+        color: #dce1ded3;
         border: #87721f;
         padding: 0.5rem 1rem;
         border-radius: 5px;
         cursor: pointer;
         box-shadow: none;
+        font-weight: bold;
     }
 
 }
@@ -140,6 +142,7 @@ li{
     min-height: 4rem;
     flex: 1;
     box-shadow: none;
+    font-weight: bold;
 }
 
 #header #barra-principal li,
@@ -157,7 +160,7 @@ li{
     align-items: start;
     width: 1000px;
     margin: 2rem auto;
-    background-color: #dce1de;
+    background-color: #dce1de8f;
     padding: 1.5rem;
     border-radius: 12px;
     border-color:#b59d3f;
@@ -190,6 +193,7 @@ li{
         border-radius: 5px;
         cursor: pointer;
         box-shadow: none;
+        font-weight: bold;
     }
 
 }
@@ -207,10 +211,46 @@ li{
     flex-shrink: 0;
 }
 
-.listadocentes .lista {
+.listaadmin .lista-con-imagen {
     display: flex;
     align-items: center;
     gap: 2rem;
+    position: relative;
+    box-sizing: border-box;
+    width: min(1000px, calc(100% - 2rem));
+    padding-right: 9rem;
+}
+
+.listaadmin .lista-con-imagen .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.listaadmin .lista-con-imagen .botonesadmin {
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.listaadmin .lista-con-imagen .botonesadmin button {
+    background-color: #a38922;
+    color: #dce1de;
+    border: #87721f;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+.listaadmin .lista-con-imagen .botonesadmin button:hover {
+    background-color: #7c6b0a;
+    color: #d9d8d2;
 }
 
 .listaadmin .info {
@@ -226,6 +266,95 @@ li{
 
 .listaadmin .info > li {
     justify-content: flex-start;
+}
+
+.listaadmin .lista-matricula {
+    position: relative;
+    box-sizing: border-box;
+    width: min(1000px, calc(100% - 2rem));
+    padding-right: 9rem;
+}
+
+.listaadmin .lista-matricula .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.listaadmin .lista-matricula .botonesadmin {
+    right: 1.5rem;
+}
+
+.listaadmin .lista-usuario {
+    position: relative;
+    box-sizing: border-box;
+    width: min(1000px, calc(100% - 2rem));
+    padding-right: 9rem;
+}
+
+.listaadmin .lista-usuario .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.listaadmin .lista-usuario .botonesadmin {
+    right: 1.5rem;
+}
+
+@media (max-width: 700px) {
+    .containertressecciones {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .containertressecciones h1,
+    .barrabusqueda,
+    .boton-crear {
+        justify-self: center;
+        margin: 0;
+    }
+
+    .listaadmin .lista-con-imagen {
+        flex-direction: column;
+        padding-right: 1.5rem;
+    }
+
+    .listaadmin .lista-con-imagen .info {
+        width: 100%;
+    }
+
+    .listaadmin .lista-con-imagen .botonesadmin {
+        position: static;
+        align-self: stretch;
+        flex-direction: row;
+        justify-content: center;
+        transform: none;
+    }
+
+    .listaadmin .lista-matricula {
+        padding-right: 1.5rem;
+    }
+
+    .listaadmin .lista-matricula .botonesadmin {
+        position: static;
+        align-self: stretch;
+        flex-direction: row;
+        justify-content: center;
+        transform: none;
+    }
+
+    .listaadmin .lista-usuario {
+        padding-right: 1.5rem;
+    }
+
+    .listaadmin .lista-usuario .botonesadmin {
+        position: static;
+        align-self: stretch;
+        flex-direction: row;
+        justify-content: center;
+        transform: none;
+    }
 }
 
 .imagen img {

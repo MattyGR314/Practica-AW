@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Editar Aula</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <nav class="migas" aria-label="Migas de pan">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../General/index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="administracion.html">Administración</a></li>
+            <li class="breadcrumb-item"><a href="gestionaraulas.html">Gestionar Aulas</a></li>
+            <li class="breadcrumb-item" aria-current="page">Editar Aula</li>
+        </ul>
+    </nav>
+
+    <form>
+        <h1>Editar Aula</h1>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Aula 101">
+        </div>
+        <div class="form-group">
+            <label for="ubicacion">Ubicación:</label>
+            <input type="text" class="form-control" id="ubicacion" name="ubicacion" placeholder="Edificio y planta">
+        </div>
+        <div class="form-group">
+            <label for="capacidad">Capacidad:</label>
+            <input type="number" class="form-control" id="capacidad" name="capacidad" min="1" placeholder="30">
+        </div>
+        <div class="form-group">
+            <label for="equipamiento">Equipamiento:</label>
+            <input type="text" class="form-control" id="equipamiento" name="equipamiento" placeholder="Proyector, computadoras">
+        </div>
+        <div class="form-group">
+            <label for="estado">Estado:</label>
+            <input type="text" class="form-control" id="estado" name="estado" placeholder="Disponible">
+        </div>
+        <button type="button" onclick="window.location.href='gestionaraulas.html'">Guardar Cambios</button>
+    </form>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer"></div>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

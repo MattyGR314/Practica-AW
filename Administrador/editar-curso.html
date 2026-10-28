@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Editar Curso</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <nav class="migas" aria-label="Migas de pan">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../General/index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="administracion.html">Administración</a></li>
+            <li class="breadcrumb-item"><a href="gestionarcursos.html">Gestionar Cursos</a></li>
+            <li class="breadcrumb-item" aria-current="page">Editar Curso</li>
+        </ul>
+    </nav>
+
+    <form>
+        <h1>Editar Curso</h1>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="MS">
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripción:</label>
+            <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Descripción del curso">
+        </div>
+        <div class="form-group">
+            <label for="docente">Docente responsable:</label>
+            <input type="text" class="form-control" id="docente" name="docente" placeholder="Nombre del docente">
+        </div>
+        <div class="form-group">
+            <label for="aula">Aula asignada:</label>
+            <input type="text" class="form-control" id="aula" name="aula" placeholder="Aula 4">
+        </div>
+        <div class="form-group">
+            <label for="fecha-inicio">Fecha de inicio:</label>
+            <input type="date" class="form-control" id="fecha-inicio" name="fecha-inicio">
+        </div>
+        <div class="form-group">
+            <label for="fecha-fin">Fecha de finalización:</label>
+            <input type="date" class="form-control" id="fecha-fin" name="fecha-fin">
+        </div>
+        <div class="form-group">
+            <label for="horario">Horario:</label>
+            <input type="text" class="form-control" id="horario" name="horario" placeholder="Días y horas">
+        </div>
+        <div class="form-group">
+            <label for="plazas">Número máximo de plazas:</label>
+            <input type="number" class="form-control" id="plazas" name="plazas" min="1" placeholder="120">
+        </div>
+        <div class="form-group">
+            <label for="estado">Estado:</label>
+            <input type="text" class="form-control" id="estado" name="estado" placeholder="Activo">
+        </div>
+        <button type="button" onclick="window.location.href='gestionarcursos.html'">Guardar Cambios</button>
+    </form>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer"></div>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

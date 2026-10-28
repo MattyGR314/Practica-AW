@@ -11,11 +11,11 @@
 <body>
     <div id="header"></div>
 
-    <nav class ="migas" aria-label="Migas de pan">
+    <nav class="migas" aria-label="Migas de pan">
         <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../General/index.html">Inicio-></a></li>
+            <li class="breadcrumb-item"><a href="../General/index.html">Inicio</a></li>
             <li class="breadcrumb-item"><a href="administracion.html">Administración</a></li>
-            <li class="breadcrumb-item">Gestionar Docentes</li>
+            <li class="breadcrumb-item" aria-current="page">Gestionar Docentes</li>
         </ul>
     </nav>
 
@@ -25,50 +25,52 @@
             <input type="text" placeholder="Buscar docente..." class="busqueda-docentes">
             <button type="button" class="boton-buscar">Buscar</button>
         </nav>
-        <button type="button" class="boton-crear" onclick="window.location.href='../General/registro.html'">Crear Usuario</button>
+        <button type="button" class="boton-crear" onclick="window.location.href='../General/registro.html'">Crear Docente</button>
     </div>
 
-    <ul class="listaadmin" id="lista-aulas">
+    <ul class="listaadmin">
         <li>
-            <ul>
-                <h1>Docente 1</h1>
-
-                <img src="../img/ignacio.fabregas.png" alt="Imagen del Docente 1">
-
-                <p>Descripción del docente 1...</p>
-                <li>Id: 1</li>
-                <li>Nombre: Antonio</li>
-                <li>Apellidos: Navarro Martín</li>
-                <li>Especialidad: Sufrimiento y desesperación</li>
-                <li>Correo electrónico responsable: antonio@fdi.ucm.es</li>
-                <li>Telefono: 123-456-7890</li>
-                <li>Estado: Activo</li>
-        </ul>
-        <br>
-        <div class="botones">
-                <button onclick="window.location.href='../General/editarcurso.html'">Editar</button>
-                <button onclick="window.location.href='dardebaja.html'">Eliminar</button>
+            <div class="lista lista-con-imagen">
+                <div class="imagen">
+                    <img src="../img/ignacio.fabregas.png" alt="Imagen del Docente 1">
                 </div>
+                <div class="info">
+                    <h3>Id: 1</h3>
+                    <div class="docenteinfo">
+                        <p>Nombre: Antonio</p>
+                        <p>Apellidos: Navarro Martín</p>
+                        <p>Especialidad: Sufrimiento y desesperación</p>
+                        <p>Correo electrónico responsable: antonio@fdi.ucm.es</p>
+                        <p>Teléfono: 123-456-7890</p>
+                        <p>Estado: Activo</p>
+                    </div>
+                </div>
+                <div class="botonesadmin">
+                    <button type="button" onclick="window.location.href='editar-docente.html'">Editar</button>
+                    <button type="button" onclick="window.location.href='dardebaja.html'">Eliminar</button>
+                </div>
+            </div>
         </li>
         <li>
-            <ul>
-                <h1>Docente 2</h1>
-
-                <img src="../img/virginia.francisco.png" alt="Imagen del Docente 2">
-
-                <p>Descripción del docente 2...</p>
-                <li>Id: 2</li>
-                <li>Nombre: Virginia</li>
-                <li>Apellidos: Francisco Martin</li>
-                <li>Especialidad: Sufrimiento y desesperación</li>
-                <li>Correo electrónico responsable: virginia@fdi.ucm.es</li>
-                <li>Telefono: 098-765-4321</li>
-                <li>Estado: Activo</li>
-            </ul>
-            <br>
-            <div class="botones">
-                <button onclick="window.location.href='../General/editarcurso.html'">Editar</button>
-                <button onclick="window.location.href='dardebaja.html'">Eliminar</button>
+            <div class="lista lista-con-imagen">
+                <div class="imagen">
+                    <img src="../img/virginia.francisco.png" alt="Imagen del Docente 2">
+                </div>
+                <div class="info">
+                    <h3>Id: 2</h3>
+                    <div class="docenteinfo">
+                        <p>Nombre: Virginia</p>
+                        <p>Apellidos: Francisco Martin</p>
+                        <p>Especialidad: Sufrimiento y desesperación</p>
+                        <p>Correo electrónico responsable: virginia@fdi.ucm.es</p>
+                        <p>Teléfono: 098-765-4321</p>
+                        <p>Estado: Activo</p>
+                    </div>
+                </div>
+                <div class="botonesadmin">
+                    <button type="button" onclick="window.location.href='editar-docente.html'">Editar</button>
+                    <button type="button" onclick="window.location.href='dardebaja.html'">Eliminar</button>
+                </div>
             </div>
         </li>
     </ul>

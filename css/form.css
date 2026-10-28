@@ -1,5 +1,5 @@
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: "Roboto", sans-serif;
     /*background-image: url('../img/banner.png');*/
     background-color: #dce1de;
     margin: 0;
@@ -10,16 +10,17 @@ form{
     display: grid;
     place-items: center;
     align-self: center;
-    border: 1px solid #2c5f47;
-    border-radius: 20px;
-    border-width: 5px;
+    border: px solid #00000020;
+    border-radius: 10px;
     margin: 2rem;
     padding: 2rem;
-    background-color: #9cc5a1;
-    width: 80%;
-    height: 50%;
-    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.574);
-    color: #dce1de;
+    background-color: #dce1de8f;
+    width: 50%;
+    height: 100%;
+    box-shadow: 0 2px 15px rgba(16, 46, 25, 0.296);
+    color : #2c5f47;
+    font-weight: bold;
+    text-shadow: #63927c 1px 1px 2px;
 }
 
 li{
@@ -27,7 +28,7 @@ li{
 }
 
 form h1{
-    color: #dce1de;
+    color : #2c5f47;
     margin-bottom: 1rem;
 }
 
@@ -35,7 +36,7 @@ form input{
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: 2px ridge #2c5f47c4;
+    border: 3px ridge #2c5f47c4;
     border-radius: 5px;
 }
 
@@ -57,12 +58,13 @@ form button:hover{
 }
 
 form p{
-    color: #dce1de;
+    color: #2c5f47;
     margin-top: 1rem;
+    margin-bottom: 0.2rem;
 }
 
 form input::placeholder{
-    color: #dce1de;
+    color: #2c5f47;
     opacity: 0.7;
 }
 

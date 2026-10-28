@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Editar Matrícula</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <nav class="migas" aria-label="Migas de pan">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../General/index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="administracion.html">Administración</a></li>
+            <li class="breadcrumb-item"><a href="gestionarmatriculas.html">Gestionar Matrículas</a></li>
+            <li class="breadcrumb-item" aria-current="page">Editar Matrícula</li>
+        </ul>
+    </nav>
+
+    <form>
+        <h1>Editar Matrícula</h1>
+        <div class="form-group">
+            <label for="alumno">Alumno:</label>
+            <input type="text" class="form-control" id="alumno" name="alumno" placeholder="Nombre del alumno">
+        </div>
+        <div class="form-group">
+            <label for="curso">Curso:</label>
+            <input type="text" class="form-control" id="curso" name="curso" placeholder="Nombre del curso">
+        </div>
+        <div class="form-group">
+            <label for="fecha">Fecha de matrícula:</label>
+            <input type="date" class="form-control" id="fecha" name="fecha">
+        </div>
+        <div class="form-group">
+            <label for="estado">Estado:</label>
+            <input type="text" class="form-control" id="estado" name="estado" placeholder="Activo">
+        </div>
+        <button type="button" onclick="window.location.href='gestionarmatriculas.html'">Guardar Cambios</button>
+    </form>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer"></div>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>
