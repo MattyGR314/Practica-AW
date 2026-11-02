@@ -1,40 +1,50 @@
-const curso = {
-    id: 1,
-    nombre: "MS",
-    descripcion: "Sufrimiento y desesperación",
-    docente: "Antonio Navarro Martín",
-    aula: "Aula 4",
-    fechaInicio: "2026-09-09",
-    fechaFin: "2026-12-09",
-    horario: "Lunes y miércoles de 10:00 a 12:00",
-    maxPlazas: 120,
-    estado: "Activo",
-    img: "../img/lab.jpg"
-};
-
 const cursoContainer = document.querySelector('#listacurso');
-
-if (!headerContainer) {
+const cursoId = new URLSearchParams(window.location.search).get('id');//Desde el id pasado en listacursos.js coge el curso que sea para cargar dinamicamente
+const curso = window.cursos?.find((item) => String(item.id) === cursoId)
+    ?? window.cursos?.[0];  //Revisar que pollas hace esto
+//LE PASA EL CURSO QUE ES POR LA URL Y AQUI LO PILLA 
+if (!cursoContainer) {
     console.error('No se encontró el contenedor #listacurso.');
-} else{
-    document.addEventListener('DOMContentLoaded', () => {
+} else if (!curso) {
+    console.error('No se encontraron datos de cursos.');
+} else {
     mostrarCurso(curso);
-});
 }
 
-function mostrarCurso(curso) {    
-    cursoContainer.innerHTML = `
-        <h1>Curso ${curso.id}</h1>
-        <img src="${curso.img}" alt="Imagen del Curso ${curso.id}">
-        <p>Descripción del curso ${curso.id}...</p>
-        <li>Id: ${curso.id}</li>
-        <li>Nombre: ${curso.nombre}</li>
-        <li>Descripción: ${curso.descripcion}</li>
-        <li>Docente responsable: ${curso.docente}</li>
-        <li>Aula asignada: ${curso.aula}</li>
-        <li>Fecha de inicio: <time datetime="${curso.fechaInicio}">${curso.fechaInicio}</time></li>
-        <li>Fecha de finalización: <time datetime="${curso.fechaFin}">${curso.fechaFin}</time></li>
-        <li>Horario: ${curso.horario}</li>
-        <li>Número máximo de plazas: ${curso.maxPlazas}</li>
-        <li>Estado: ${curso.estado}</li>`;
+function mostrarCurso(curso) {  //monta la página desde 0 del cursod e forma dinámica
+    document.title = `Curso ${curso.nombre}`;
+    const titulo = document.querySelector('#titulo-curso');
+    if (titulo) {
+        titulo.textContent = `Curso ${curso.nombre}`;
+    }
+    const migas = document.querySelector('#miga-curso');
+    if (migas) {
+        migas.textContent = `Curso ${curso.nombre}`;
+    }
+
+    const imagen = document.createElement('img');
+    imagen.src = curso.img;
+    imagen.alt = `Imagen del curso ${curso.nombre}`;
+    cursoContainer.append(imagen);
+
+    const datos = [
+        ['Id', curso.id],
+        ['Nombre', curso.nombre],
+        ['Descripción', curso.descripcion],
+        ['Docente responsable', curso.docente],
+        ['Aula asignada', curso.aula],
+        ['Fecha de inicio', curso.fechaInicio],
+        ['Fecha de finalización', curso.fechaFin],
+        ['Horario', curso.horario],
+        ['Número máximo de plazas', curso.maxPlazas],
+        ['Estado', curso.estado]
+    ];
+
+    datos.forEach(([etiqueta, valor]) => {
+        const elemento = document.createElement('li');
+        elemento.textContent = `${etiqueta}: ${valor}`;
+        cursoContainer.append(elemento);
+    });
 }
+
+//LO QUE NO ENTIENDO ES COMO SABE JS QUE QUIERO QUE SE PONGA JUSTO DEBAJE DEL UL????
