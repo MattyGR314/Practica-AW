@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="header"></div>
-    <form action="procesar.php" method="post">
+    <form id="forminiciosesion" action="procesar.php" method="post">
          
         <nav class ="migas" aria-label="Migas de pan">
         <ul class="breadcrumb">
@@ -22,15 +22,15 @@
         <!-- el procesar.php es donde se mandan los datos del formulario, queremos que vayan a la BBDD-->
          <div class="form-gupo">
             <p>Email: </p>
-            <input type="email" name="mail" placeholder="ejemplo@gmail.com" required>
+            <input id="email" type="email" name="mail" placeholder="ejemplo@gmail.com" required>
          </div>
         
          <div class="form-gupo">
             <p>Contraseña: </p>
-            <input type="password" name="password" placeholder="Contraseña" required>
+            <input id="password" type="password" name="password" placeholder="Contraseña" required>
          </div>
         <br>
-        <button type="submit" onclick="window.location.href='index.html'">Iniciar Sesión</button>
+        <button id="submit" type="submit">Iniciar Sesión</button>
         <br>
         <button type="button" onclick="window.location.href='registro.html'">Registrarse</button>
     </form>
@@ -39,4 +39,5 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
+    <script src="../js/General/iniciosesion.js"></script>
 </body>

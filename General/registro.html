@@ -10,7 +10,7 @@
 <body>
     <div id="header"></div>
 
-    <form action="procesar.php" method="post">
+    <form id="formregistro" action="procesar.php" method="post">
         <!-- <button class="volver" onclick="window.location.href='index.html'"><img src="../img/arrow-left-circle.png" alt="Volver"></button> -->
         
       <nav class ="migas" aria-label="Migas de pan">
@@ -33,22 +33,23 @@
          </div>
          <div class="form-gupo">
             <p>Email: </p>
-            <input type="email" name="mail" placeholder="ejemplo@gmail.com" required>
+            <input id="email" type="email" name="mail" placeholder="ejemplo@gmail.com" required>
          </div>
         
          <div class="form-gupo">
             <p>Contraseña: </p>
-            <input type="password" name="password" placeholder="Contraseña" required>
+            <input id="password" type="password" name="password" placeholder="Contraseña" required>
          </div>
 
          <div class="form-gupo">
             <p>Confirmar Contraseña: </p>
-            <input type="password" name="confirm_password" placeholder="Confirmar Contraseña" required>
+            <input id="confirm_password" type="password" name="confirm_password" placeholder="Confirmar Contraseña" required>
          </div>
         <br>
-        <button type="submit">Registrarse</button>
+        <button id="submitbt" type="submit">Registrarse</button>
     </form>
     <div id="footer"></div>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
+    <script src="../js/General/registro.js"></script>
 </body>
