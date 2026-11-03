@@ -28,48 +28,15 @@
         <button type="button" class="boton-crear" onclick="window.location.href='../General/registro.html'">Crear Usuario</button>
     </div>
 
-    <ul class="listaadmin">
-        <li>
-            <div class="lista lista-usuario">
-                <div class="info">
-                    <h3>Id: 1</h3>
-                    <p>Nombre: Mateo Gutierrez Rios</p>
-                    <p>Contraseña: 123456</p>
-                    <p>Correo: mateo@fdi.ucm.es</p>
-                    <p>Rol: Estudiante</p>
-                    <p>Estado: Defenestrada</p>
-                    <p>Fecha de Alta: 2023-01-15</p>
-                    <p>Preferencias de Accesibilidad: -</p>
-                </div>
-                <div class="botonesadmin">
-                    <button type="button" onclick="window.location.href='../General/editarperfil.html'">Editar</button>
-                    <button type="button" onclick="window.location.href='dardebaja.html'">Eliminar</button>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class="lista lista-usuario">
-                <div class="info">
-                    <h3>Id: 2</h3>
-                    <p>Nombre: Virginia Francisco Martin</p>
-                    <p>Contraseña: 12345</p>
-                    <p>Correo: virginia@fdi.ucm.es</p>
-                    <p>Rol: Docente</p>
-                    <p>Estado: Defenestrada</p>
-                    <p>Fecha de Alta: 2023-01-15</p>
-                    <p>Preferencias de Accesibilidad: -</p>
-                </div>
-                <div class="botonesadmin">
-                    <button type="button" onclick="window.location.href='editar-usuario.html'">Editar</button>
-                    <button type="button" onclick="window.location.href='dardebaja.html'">Eliminar</button>
-                </div>
-            </div>
-        </li>
+    <ul class="listaadmin" id="listausuarios">
+
     </ul>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <div id="footer"></div>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
+    <script src="../js/Administrador/usuarios.js"></script>
+    <script src="../js/Administrador/gestionarusuarios.js"></script>
 </body>
 </html>

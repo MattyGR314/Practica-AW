@@ -22,7 +22,7 @@
 
     
 
-    <form id="editar-perfil-form">
+    <form id="formeditarperfil">
         <h1>Editar tu Perfil</h1>
         <div class="form-group">
             <label for="nombre">Nombre:</label>
@@ -37,17 +37,22 @@
             <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
         </div>
         <div class="form-group">
+            <label for="password">Confirmar Contraseña:</label>
+            <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Confirmar Contraseña">
+        </div>
+        <div class="form-group">
             <label for="accesibilidad">Preferencias de Accesibilidad:</label>
             <input type="checkbox" class="form-control" id="daltonico" name="daltonico">
             <label for="modo daltónico">Activar modo daltónico</label>
             <input type="checkbox" class="form-control" id="sordos" name="sordos">
             <label for="modo sordo">Activar modo sordo</label>
         </div>
-        <button type="submit" class="btn btn-primary" onclick="window.location.href='perfil.html'">Guardar Cambios</button>
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
     </form>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <div id="footer"></div>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
+    <script src="../js/General/editarperfil.js"></script>
 </body>

@@ -31,8 +31,8 @@
         <button type="button" class="boton-crear" onclick="window.location.href='../General/registroaula.html'">Crear Aula</button>
     </div>
 
-    <ul class="listaadmin">
-        <li>
+    <ul class="listaadmin" id="listaaulas">
+   <!--     <li>
             <div class="lista">
                 <h3>Id: 1</h3>
                 <ul>
@@ -42,7 +42,7 @@
                     <li>Equipamiento: Proyector, Computadoras</li>
                     <li>Estado: Disponible</li>
                     <div class="botonesadmin">
-                        <button type="button" onclick="window.location.href='editar-aula.html'">Editar</button>
+                        <button type="button" onclick="window.location.href='editaraula.html'">Editar</button>
                         <button onclick="window.location.href='dardebaja.html'">Eliminar</button>
                     </div>
                 </ul>
@@ -65,11 +65,14 @@
                 </ul>
             </div>
         </li>
+        -->
     </ul>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <div id="footer"></div>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
+    <script src="../js/General/aulas.js"></script>
+    <script src="../js/Administrador/gestionaraulas.js"></script>
 </body>
 </html>
