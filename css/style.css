@@ -1,7 +1,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url('../img/FondoGlass5.png');
-    background-attachment: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #dce1de;
     margin: 0;
     min-height: 100vh;

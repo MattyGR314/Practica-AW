@@ -1,5 +1,6 @@
 window.docentes = [
     {
+        id:1,
         nombre: "VIrginia Francisco Martín",
         asignatura: "Desarrollo Web",
         correo: "virginia@fdi.ucm.es",
@@ -9,6 +10,7 @@ window.docentes = [
     },
 
     {
+        id:2,
         nombre: "Ignacio Fábregas",
         asignatura: "FAL",
         correo: "ignacio@fdi.ucm.es",
