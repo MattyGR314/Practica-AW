@@ -71,6 +71,7 @@ function mostrarCursoEnLista(curso) {
     divbotones.append(botonEliminar);
 
     divlista.append(divimg, divinfo, divbotones);
+    divlista.append(divbotones);
     elemento.append(divlista);
     //Añado cada cosa de html creada al elemento li y luego ese elemento lo añado al container  
     cursoContainer.append(elemento);

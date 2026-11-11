@@ -20,17 +20,19 @@
     </nav>
 
     <form action="procesar.php" method="post" id="formmatricula">
-        <button class="volver" onclick="window.location.href='index.html'"><img class="img-fluid" src="../img/arrow-left-circle.png" alt="Volver"></button>
-         <h1>Matricularse</h1>
+        <div id="volver">
+            <button class="volver" onclick="window.location.href='listacursos.html'"><img class="img" src="../img/icons/arrow-left-circle.svg" alt="Volver"></button>
+        </div>
+        <h1>Matricularse</h1>
         <!-- el procesar.php es donde se mandan los datos del formulario, queremos que vayan a la BBDD-->
          <div class="form-gupo">
             <p>Usuario: </p>
-            <input class="form-control" type="text" name="username" placeholder="Nombre de usuario" required>
+            <input type="text" name="username" placeholder="Nombre de usuario" required>
          </div>
         
          <div class="form-gupo">
             <p>Curso: </p>
-            <input class="form-control" type="text" name="course" id="courseinp" placeholder="Nombre del curso" required>
+            <input type="text" name="course" id="courseinp" placeholder="Nombre del curso" required>
          </div>
         <br>
         <button type="submit" onclick="window.location.href='index.html'">Matricularse</button>

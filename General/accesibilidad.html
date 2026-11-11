@@ -4,60 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/acc.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/listas.css">
     <title>Accesibilidad</title>
 </head>
 <body>
     <div id="header"></div>
-    <form id="formregistro" action="procesar.php" method="post">
-<nav class ="migas" aria-label="Migas de pan">
+    <form id="formaccesibilidad" action="procesar.php" method="post">
+    <nav class ="migas" aria-label="Migas de pan">
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="../General/index.html">Inicio</a></li>
             <li class="breadcrumb-item"><a href="listacursos.html">Lista de Cursos</a></li>
             <li class="breadcrumb-item" id="miga-curso">Curso</li>
         </ul>
     </nav>
-    <h1 id="preferenciasaccesibilidad"></h1>
+
+    <h1>Preferencias de accesibilidad</h1>
     
-    <ul class="accesibilidad" id="listaaccesibilidad"> <!-- LO quito????-->
-         <div class="form-gupo">
-            <div class="divaccesibilidad">
-            <h2>Esconder logo: </h2>
-            <p>Oculta el logo de la página para reducir tiempo de carga del contenido.</p>
-            <input class="form-check-input" type="checkbox" id="esconderlogo" name="esconderlogo" label="Esconder logo">
-            </div>
-            <div class="divaccesibilidad">
-            <h2>Alto contraste: </h2>
-            <p>Aumenta el contraste de colores para mejorar la legibilidad.</p>
-            <input class="form-check-input" type="checkbox" id="contrastealto" name="contrastealto" label="Alto contraste">
-            </div>
-            <div class="divaccesibilidad">
-            <h2>Modo oscuro: </h2>
-            <p>Elegir entre modo claro y modo oscuro.</p>
-            <input class="form-check-input" type="radio" id="modooscuro" name="modooscuro" label="Modo claro">
-            <p>Modo claro</p>
-            <input class="form-check-input" type="radio" id="modoclaro" name="modooscuro" label="Modo oscuro">
-            <p>Modo oscuro</p>
-            </div>
-            <div class="divaccesibilidad">
-            <h2>Tamaño de fuente: </h2>
-            <p>Ajusta el tamaño de la fuente de la página.</p>
-            <select class="form-select" id="tamaniofuente" name="tamaniofuente" required>
-                <option value="">Selecciona una opción</option>
-                <option value="pequeño">Pequeño</option>
-                <option value="mediano">Mediano</option>
-                <option value="grande">Grande</option>
-            </select>
-            </div>
-            <div class="divaccesibilidad">
-            <h2>Restablecer preferencias</h2>
-            <p>Restablece las preferencias de accesibilidad a sus valores por defecto.</p>
-            <button type="button" id="restablecer" name="restablecer">Restablecer</button>
-            </div>
+    <ul class="listaaccesibilidad"> <!-- LO quito????-->
+        <div class="divaccesibilidad">
+        <h2>Esconder logo: </h2>
+        <p>Oculta el logo de la página para reducir tiempo de carga del contenido.</p>
+        <input type="checkbox" id="esconderlogo" name="esconderlogo" label="Esconder logo">
+        </div>
+        <div class="divaccesibilidad">
+        <h2>Alto contraste: </h2>
+        <p>Aumenta el contraste de colores para mejorar la legibilidad.</p>
+        <input type="checkbox" id="contrastealto" name="contrastealto" label="Alto contraste">
+        </div>
+        <div class="divaccesibilidad">
+        <h2>Modo oscuro: </h2>
+        <p>Elegir entre modo claro y modo oscuro.</p>
+        <input type="radio" id="modooscuro" name="modooscuro" label="Modo claro">
+        <p>Modo claro</p>
+        <input type="radio" id="modoclaro" name="modooscuro" label="Modo oscuro">
+        <p>Modo oscuro</p>
+        </div>
+        <div class="divaccesibilidad">
+        <h2>Tamaño de fuente: </h2>
+        <p>Ajusta el tamaño de la fuente de la página.</p>
+        <select id="tamaniofuente" name="tamaniofuente" required>
+            <option value="">Selecciona una opción</option>
+            <option value="pequeño">Pequeño</option>
+            <option value="mediano">Mediano</option>
+            <option value="grande">Grande</option>
+        </select>
+        </div>
+        <div class="divaccesibilidad">
+        <h2>Restablecer preferencias</h2>
+        <p>Restablece las preferencias de accesibilidad a sus valores por defecto.</p>
+        <button type="button" id="restablecer" name="restablecer">Restablecer</button>
         </div>
     </ul>
+    <button type="submit">Modificar preferencias</button>
 </form>
     
     <script src="../bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>

@@ -1,0 +1,75 @@
+.divaccesibilidad{
+    display: grid;
+    place-items: center;
+    align-self: center;
+    border: 1px solid #00000020;
+    border-radius: 10px;
+    width: min(100% - 2rem, 42rem);
+    box-sizing: border-box;
+    height: auto;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #dce1de8f;
+    box-shadow: 0 2px 15px rgba(16, 46, 25, 0.296);
+    font-weight: bold;
+    font-size: clamp(0.7rem, 2.5vw, 1rem);
+    text-shadow: #63927c 1px 1px 2px;
+
+    h2{
+        size-adjust: 1rem;
+    }
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    /*background-image: url('../img/banner.png');*/
+    background-color: #dce1de;
+    margin: 0;
+    min-height: 100vh;
+}
+
+form{
+    display: grid;
+    place-items: center;
+    align-self: center;
+    padding:3%;
+    align-self: center;
+    border: 1px solid #00000020;
+    border-radius: 10px;
+    width: min(100% - 2rem, 60rem);
+    box-sizing: border-box;
+    height: auto;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #dce1de8f;
+    box-shadow: 0 2px 15px rgba(16, 46, 25, 0.296);
+    font-weight: normal;
+    font-size: clamp(0.7rem, 2.5vw, 1rem);
+    text-shadow: #63927c 1px 1px 2px;
+
+    > button{
+        background-color: #a38922;
+        color: #dce1de;
+        text-shadow: 0 2px 2px 2px #4cac265b;
+        font-weight: bold;
+        border: none;
+        padding: 0.5rem 1rem;
+        margin: clamp(0.2rem, 2vw, 0.5rem) clamp(0.2rem, 2vw, 0.5rem);
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow:  2px 2px 2px #7c6b0a, -2px 2px 2px #7c6b0a;
+        transition: transform 0.2s ease;
+    }
+
+    > button:hover{
+        background-color: #7c6b0a;
+        color: #d9d8d2;
+        transform: translateY(1px);
+    }
+}
+
+.listaaccesibilidad{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    
+}
