@@ -11,11 +11,15 @@ if (!aulaContainer) {
 function mostrarAulaEnLista(aula) {
     const elemento = document.createElement('li');  //Crea los elementos de html desde document
     const divlista = document.createElement('div');
+    const img = document.createElement('img');
+    img.src = "../img/icons/bank.svg";
 
     divlista.classList.add('lista');
 
     const nombre = document.createElement('h3');
     nombre.textContent = aula.nombre;
+    nombre.insertBefore(img, nombre.firstChild);
+
     divlista.append(nombre);
     const ubi = document.createElement('p');
     ubi.textContent = `Ubicación: ${aula.ubicacion}`;

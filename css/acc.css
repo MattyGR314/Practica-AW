@@ -4,20 +4,74 @@
     align-self: center;
     border: 1px solid #00000020;
     border-radius: 10px;
-    width: min(100% - 2rem, 42rem);
+    width: min(100% - 2rem, 60rem);
     box-sizing: border-box;
     height: auto;
     margin: 2rem auto;
     padding: 2rem;
     background-color: #dce1de8f;
     box-shadow: 0 2px 15px rgba(16, 46, 25, 0.296);
-    font-weight: bold;
+    font-weight: normal;
     font-size: clamp(0.7rem, 2.5vw, 1rem);
     text-shadow: #63927c 1px 1px 2px;
+
+    
+    p{
+        font-weight: normal;
+    }
 
     h2{
         size-adjust: 1rem;
     }
+
+      > button{
+        background-color: #a38922;
+        color: #dce1de;
+        text-shadow: 0 2px 2px 2px #4cac265b;
+        font-weight: bold;
+        border: none;
+        padding: 0.5rem 1rem;
+        margin: clamp(0.2rem, 2vw, 0.5rem) clamp(0.2rem, 2vw, 0.5rem);
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow:  2px 2px 2px #7c6b0a, -2px 2px 2px #7c6b0a;
+        transition: transform 0.2s ease;
+    }
+
+    > button:hover{
+        background-color: #7c6b0a;
+        color: #d9d8d2;
+        transform: translateY(1px);
+    }
+
+    > select{
+        background-color: #2c5f47;
+        color: #dce1de;
+        border: 1px solid #2c5f47;
+        padding: 0.5rem 1rem;
+        margin: clamp(0.2rem, 2vw, 0.5rem) clamp(0.2rem, 2vw, 0.5rem);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    select,
+    ::picker(select) {
+    appearance: base-select;
+    }
+
+
+    option:hover {
+    background-color: #2c5f47; 
+    color: #dce1de;
+    }
+
+    input[type="checkbox"]{
+        accent-color: #2c5f47;
+        margin: 0.5rem;
+    }
+
+
+
 }
 
 body {
@@ -36,7 +90,7 @@ form{
     align-self: center;
     border: 1px solid #00000020;
     border-radius: 10px;
-    width: min(100% - 2rem, 60rem);
+    width: min(150% - 2rem, 100rem);
     box-sizing: border-box;
     height: auto;
     margin: 2rem auto;
@@ -70,6 +124,16 @@ form{
 
 .listaaccesibilidad{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 33% 33% 33%;
     
+}
+
+.modo-oscuro{
+    display: flex;
+    flex-direction: row;
+
+    input[type="radio"]{
+        accent-color: #2c5f47;
+        margin: 0.5rem;
+    }
 }

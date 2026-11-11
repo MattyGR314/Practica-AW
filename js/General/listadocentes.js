@@ -14,6 +14,11 @@ function mostrarDocenteEnLista(docente) {
     const divimagen = document.createElement('div');
     const divinfo = document.createElement('div');
     const divdocenteinfo = document.createElement('div');
+    const img = document.createElement('img');
+    img.src = "../img/icons/journal-richtext.svg";
+    
+    img.alt = ` ${docente.nombre}`;
+
 
     divimagen.classList.add('imagen');
     divinfo.classList.add('info');
@@ -24,6 +29,7 @@ function mostrarDocenteEnLista(docente) {
 
     const nombre = document.createElement('h3');
     nombre.textContent = docente.nombre;
+    nombre.insertBefore(img, nombre.firstChild);
     divinfo.append(nombre);
     //SECCION DE DIVDOCENTE INFO
     const asignatura = document.createElement('p');

@@ -12,6 +12,9 @@ function mostrarCursoEnLista(curso) {
     const elemento = document.createElement('li');
     const botonDetalles = document.createElement('button');
     const botonMatricula = document.createElement('button');    //Crea los elementos de html desde document
+    const img = document.createElement('img');
+    img.src = "../img/icons/caret-right-square.svg";
+    img.alt = `Imagen del curso ${curso.nombre}`;
 
     botonDetalles.type = 'button';
     botonDetalles.textContent = curso.nombre;
@@ -26,6 +29,6 @@ function mostrarCursoEnLista(curso) {
         window.location.href = 'matricula.html';
     });
 
-    elemento.append(botonDetalles, botonMatricula);
+    elemento.append(img,botonDetalles, botonMatricula);
     cursoContainer.append(elemento);
 }

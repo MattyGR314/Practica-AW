@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/acc.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/listas.css">
+    <link rel="stylesheet" href="../css/acc.css">
     <title>Accesibilidad</title>
 </head>
 <body>
@@ -20,29 +20,32 @@
         </ul>
     </nav>
 
-    <h1>Preferencias de accesibilidad</h1>
+    <h1><img src="../img/icons/universal-access.svg" alt="Logo"> Preferencias de accesibilidad</h1>
     
     <ul class="listaaccesibilidad"> <!-- LO quito????-->
         <div class="divaccesibilidad">
-        <h2>Esconder logo: </h2>
+        <h2><img src="../img/icons/image-fill.svg" alt="Esconder logo"> Esconder logo: </h2>
         <p>Oculta el logo de la página para reducir tiempo de carga del contenido.</p>
         <input type="checkbox" id="esconderlogo" name="esconderlogo" label="Esconder logo">
         </div>
         <div class="divaccesibilidad">
-        <h2>Alto contraste: </h2>
+        <h2><img src="../img/icons/noise-reduction.svg" alt="Alto contraste"> Alto contraste: </h2>
         <p>Aumenta el contraste de colores para mejorar la legibilidad.</p>
         <input type="checkbox" id="contrastealto" name="contrastealto" label="Alto contraste">
         </div>
         <div class="divaccesibilidad">
-        <h2>Modo oscuro: </h2>
+            
+        <h2><img src="../img/icons/brilliance.svg" alt="Modo oscuro"> Modo oscuro: </h2>
         <p>Elegir entre modo claro y modo oscuro.</p>
+        <div class="modo-oscuro">
         <input type="radio" id="modooscuro" name="modooscuro" label="Modo claro">
         <p>Modo claro</p>
         <input type="radio" id="modoclaro" name="modooscuro" label="Modo oscuro">
         <p>Modo oscuro</p>
         </div>
+        </div>
         <div class="divaccesibilidad">
-        <h2>Tamaño de fuente: </h2>
+        <h2><img src="../img/icons/exposure.svg" alt="Tamaño de fuente"> Tamaño de fuente: </h2>
         <p>Ajusta el tamaño de la fuente de la página.</p>
         <select id="tamaniofuente" name="tamaniofuente" required>
             <option value="">Selecciona una opción</option>
@@ -52,7 +55,7 @@
         </select>
         </div>
         <div class="divaccesibilidad">
-        <h2>Restablecer preferencias</h2>
+        <h2><img src="../img/icons/arrow-counterclockwise.svg" alt="Restablecer preferencias"> Restablecer preferencias</h2>
         <p>Restablece las preferencias de accesibilidad a sus valores por defecto.</p>
         <button type="button" id="restablecer" name="restablecer">Restablecer</button>
         </div>
