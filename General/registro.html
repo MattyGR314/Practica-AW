@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Registrarse</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/form.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -26,30 +26,31 @@
         <!-- el procesar.php es donde se mandan los datos del formulario, queremos que vayan a la BBDD-->
           <div class="form-gupo">
             <p>Nombre: </p>
-            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input class="form-control" type="text" name="name" placeholder="Tu nombre" required>
          </div>
           <div class="form-gupo">
             <p>Apellidos: </p>
-            <input type="text" name="last_name" placeholder="Tus apellidos" required>
+            <input class="form-control" type="text" name="last_name" placeholder="Tus apellidos" required>
          </div>
          <div class="form-gupo">
             <p>Email: </p>
-            <input id="email" type="email" name="mail" placeholder="ejemplo@gmail.com" required>
+            <input class="form-control" id="email" type="email" name="mail" placeholder="ejemplo@gmail.com" required>
          </div>
         
          <div class="form-gupo">
             <p>Contraseña: </p>
-            <input id="password" type="password" name="password" placeholder="Contraseña" required>
+            <input class="form-control" id="password" type="password" name="password" placeholder="Contraseña" required>
          </div>
 
          <div class="form-gupo">
             <p>Confirmar Contraseña: </p>
-            <input id="confirm_password" type="password" name="confirm_password" placeholder="Confirmar Contraseña" required>
+            <input class="form-control" id="confirm_password" type="password" name="confirm_password" placeholder="Confirmar Contraseña" required>
          </div>
         <br>
         <button id="submitbt" type="submit">Registrarse</button>
     </form>
     <div id="footer"></div>
+    <script src="../bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
     <script src="../js/Administrador/usuarios.js"></script>

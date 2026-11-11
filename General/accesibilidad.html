@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/form.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/listas.css">
@@ -26,25 +26,25 @@
             <div class="divaccesibilidad">
             <h2>Esconder logo: </h2>
             <p>Oculta el logo de la página para reducir tiempo de carga del contenido.</p>
-            <input type="checkbox" id="esconderlogo" name="esconderlogo" label="Esconder logo">
+            <input class="form-check-input" type="checkbox" id="esconderlogo" name="esconderlogo" label="Esconder logo">
             </div>
             <div class="divaccesibilidad">
             <h2>Alto contraste: </h2>
             <p>Aumenta el contraste de colores para mejorar la legibilidad.</p>
-            <input type="checkbox" id="contrastealto" name="contrastealto" label="Alto contraste">
+            <input class="form-check-input" type="checkbox" id="contrastealto" name="contrastealto" label="Alto contraste">
             </div>
             <div class="divaccesibilidad">
             <h2>Modo oscuro: </h2>
             <p>Elegir entre modo claro y modo oscuro.</p>
-            <input type="radio" id="modooscuro" name="modooscuro" label="Modo claro">
+            <input class="form-check-input" type="radio" id="modooscuro" name="modooscuro" label="Modo claro">
             <p>Modo claro</p>
-            <input type="radio" id="modoclaro" name="modooscuro" label="Modo oscuro">
+            <input class="form-check-input" type="radio" id="modoclaro" name="modooscuro" label="Modo oscuro">
             <p>Modo oscuro</p>
             </div>
             <div class="divaccesibilidad">
             <h2>Tamaño de fuente: </h2>
             <p>Ajusta el tamaño de la fuente de la página.</p>
-            <select id="tamaniofuente" name="tamaniofuente" required>
+            <select class="form-select" id="tamaniofuente" name="tamaniofuente" required>
                 <option value="">Selecciona una opción</option>
                 <option value="pequeño">Pequeño</option>
                 <option value="mediano">Mediano</option>
@@ -60,7 +60,7 @@
     </ul>
 </form>
     
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
     <div id="footer"></div>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>

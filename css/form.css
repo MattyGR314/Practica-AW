@@ -12,9 +12,10 @@ form{
     align-self: center;
     border: 1px solid #00000020;
     border-radius: 10px;
-    width: 50%;
-    height: 100%;
-    margin: 2rem;
+    width: min(100% - 2rem, 42rem);
+    box-sizing: border-box;
+    height: auto;
+    margin: 2rem auto;
     padding: 2rem;
     background-color: #dce1de8f;
     box-shadow: 0 2px 15px rgba(16, 46, 25, 0.296);
@@ -33,8 +34,9 @@ form h1{
     margin-bottom: 1rem;
 }
 
-form input{
-    width: clamp(30%, 45vw, 100%);
+form input:not([type="checkbox"]):not([type="radio"]){
+    width: min(100%, 32rem);
+    box-sizing: border-box;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: 3px ridge #2c5f47c4;
@@ -68,6 +70,17 @@ form p{
 form input::placeholder{
     color: #2c5f47;
     opacity: 0.7;
+}
+
+@media (max-width: 576px) {
+    form {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    form input:not([type="checkbox"]):not([type="radio"]) {
+        width: 100%;
+    }
 }
 
 .volver{

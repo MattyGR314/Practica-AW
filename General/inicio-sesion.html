@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Iniciar Sesión</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/form.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -23,12 +23,12 @@
         <!-- el procesar.php es donde se mandan los datos del formulario, queremos que vayan a la BBDD-->
          <div class="form-gupo">
             <p>Email: </p>
-            <input id="email" type="email" name="mail" placeholder="ejemplo@gmail.com" required>
+            <input class="form-control" id="email" type="email" name="mail" placeholder="ejemplo@gmail.com" required>
          </div>
         
          <div class="form-gupo">
             <p>Contraseña: </p>
-            <input id="password" type="password" name="password" placeholder="Contraseña" required>
+            <input class="form-control" id="password" type="password" name="password" placeholder="Contraseña" required>
          </div>
         <br>
         <button id="submit" type="submit">Iniciar Sesión</button>
@@ -37,7 +37,7 @@
     </form>
 
     <div id="footer"></div>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
     <script src="../js/General/iniciosesion.js"></script>
