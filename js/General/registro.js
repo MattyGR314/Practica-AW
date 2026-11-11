@@ -1,4 +1,3 @@
-const submitButton = document.querySelector('#submitbt');
 const emailInput = document.querySelector('#email');
 const passwordInput = document.querySelector('#password');
 const confirmPasswordInput = document.querySelector('#confirm_password');
@@ -6,23 +5,41 @@ const form = document.querySelector('#formregistro');
 
 if (!form) {
     console.error('No se encontró el formulario #formregistro');
-} else{
+} else {
     form.addEventListener('submit', (event) => {
-    //enviar a bbdd
-    if(!emailInput || !passwordInput || !confirmPasswordInput) {
-        event.preventDefault(); // Evita que el formulario se envíe automáticamente
-        console.error('No se encontraron los campos de entrada requeridos.');
-        return;
-    } else if (passwordInput.value !== confirmPasswordInput.value) {
-        event.preventDefault(); // Evita que el formulario se envíe automáticamente
-        alert('Las contraseñas no coinciden. Por favor, inténtelo de nuevo.');
-        return;
-    } else {
-        event.preventDefault(); //esto de momento hasta que tengamos el procesar.php
-        alert('Registro exitoso.');
-        return;
-    }
-});
-}
+        const nameInput = form.querySelector('[name="name"]');
+        const lastNameInput = form.querySelector('[name="last_name"]');
 
+        if (!emailInput || !passwordInput || !confirmPasswordInput || !nameInput || !lastNameInput) {
+            event.preventDefault();
+            console.error('No se encontraron los campos de entrada requeridos.');
+            return;
+        }
+
+        if (!Array.isArray(window.usuarios)) {
+            event.preventDefault();
+            console.error('No se encontró la lista de usuarios.');
+            return;
+        }
+
+        if (passwordInput.value !== confirmPasswordInput.value) {
+            event.preventDefault();
+            alert('Las contraseñas no coinciden. Por favor, inténtelo de nuevo.');
+            return;
+        }
+
+        event.preventDefault();
+        /*window.usuarios.push({
+            id: window.usuarios.length,
+            nombre: `${nameInput.value.trim()} ${lastNameInput.value.trim()}`,
+            contraseña: passwordInput.value,
+            correo: emailInput.value,
+            rol: 'Estudiante',
+            estado: 'Activo',
+            fechaAlta: new Date().toISOString().slice(0, 10),
+            preferenciasAccesibilidad: '-'
+        });*/
+        alert('Registro exitoso.');
+    });
+}
 

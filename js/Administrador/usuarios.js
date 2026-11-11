@@ -1,6 +1,6 @@
 window.usuarios = [
     {
-        id: 2,
+        id: 0,
         nombre: "VIrginia Francisco Martín",
         contraseña: "12345",
         correo: "virginia@fdi.ucm.es",
@@ -19,5 +19,4 @@ window.usuarios = [
         fechaAlta: "2023-01-15",
         preferenciasAccesibilidad: "-"
     }
-
-    ];
+];
