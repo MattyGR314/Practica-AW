@@ -1,13 +1,10 @@
 .divaccesibilidad{
     display: grid;
     place-items: center;
-    align-self: center;
     border: 1px solid #00000020;
     border-radius: 10px;
-    width: min(100% - 2rem, 60rem);
     box-sizing: border-box;
     height: auto;
-    margin: 2rem auto;
     padding: 2rem;
     background-color: #dce1de8f;
     box-shadow: 0 2px 15px rgba(16, 46, 25, 0.296);
@@ -83,14 +80,14 @@ body {
 }
 
 form{
-    display: grid;
+    display: block
+    ;
     place-items: center;
     align-self: center;
-    padding:3%;
     align-self: center;
     border: 1px solid #00000020;
     border-radius: 10px;
-    width: min(150% - 2rem, 100rem);
+    width: min(100% - 2rem, 100rem);
     box-sizing: border-box;
     height: auto;
     margin: 2rem auto;
@@ -122,12 +119,6 @@ form{
     }
 }
 
-.listaaccesibilidad{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    
-}
-
 .modo-oscuro{
     display: flex;
     flex-direction: row;
@@ -136,4 +127,10 @@ form{
         accent-color: #2c5f47;
         margin: 0.5rem;
     }
+}
+
+.listaaccesibilidad{
+    background: none;
+    border: none;
+    box-shadow: none;
 }
